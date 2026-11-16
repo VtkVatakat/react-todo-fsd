@@ -1,0 +1,15 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Изучить классический FSD на React",
+      "completed": true
+    },
+    {
+      "id": "2",
+      "title": "Настроить RTK Query и json-server",
+      "completed": false
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
