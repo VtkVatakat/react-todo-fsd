@@ -28,7 +28,7 @@ export function EditTodoForm({ id, initialTitle, onCancel, onSuccess }: EditTodo
 
     const parsed = updateTodoSchema.safeParse({ title: trimmedTitle });
     if (!parsed.success) {
-      setErrorText(parsed.error.issues?.message ?? 'Ошибка ввода');
+      setErrorText(parsed.error.issues[0]?.message ?? 'Ошибка ввода');
       return;
     }
 

@@ -14,7 +14,7 @@ export function AddTodoForm() {
 
     const parsed = createTodoSchema.safeParse({ title: title.trim() });
     if (!parsed.success) {
-      setErrorText(parsed.error.issues?.message ?? 'Ошибка ввода');
+      setErrorText(parsed.error.issues[0]?.message ?? 'Ошибка ввода');
       return;
     }
 
